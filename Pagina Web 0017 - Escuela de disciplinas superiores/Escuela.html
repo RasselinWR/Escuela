@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directorio de APEIRON</title>
+    <meta name="viewport" content="initial-scale=1">
+    <script>
+        function veranuncio()
+        {
+            //alert("Hola Mundo bienvenido al portal de la página web de la escuela Apeiron de Shunay")
+            let anuncio = document.getElementById("publicidad")
+            alert(anuncio.innerHTML)
+        }
+    </script>
+    <style>
+        .caja{
+            padding: 2px;
+            gap: 5px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        .Objetos{
+            padding: 20px;
+            gap: 15px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            z-index: 20;
+        }
+        .Objetos div{
+            margin-top: 2px;
+            border: 2px solid #990000;
+            min-height: 100px;
+            max-height: 200px;
+            min-width: 100px;
+            max-width: 200px;
+            z-index: 20;
+        }
+@media screen and (min-width: 1300px)
+{
+    .uno {
+        background: rgba(22,22,22,0.2);
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .dos {
+        background: rgba(22,22,22,0.2);
+    }
+}
+
+@media screen and (min-width: 1100px)
+{
+    .tres {
+        background: rgba(22,22,22,0.2);
+    }
+}
+
+
+@media screen and (min-width: 1000px)
+{
+    .cuatro {
+        background: rgba(22,22,22,0.2);
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    .cinco {
+        background: rgba(22,22,22,0.2);
+    }
+}
+@media screen and (min-width: 800px)
+{
+    .seis {
+        background: rgba(22,22,22,0.2);
+    }
+}
+@media screen and (min-width: 700px)
+{
+    .siete {
+        background: rgba(22,22,22,0.2);
+    }
+}
+@media screen and (min-width: 600px)
+    {
+    .ocho {
+        background: rgba(22,22,22,0.2);
+    }
+}
+@media screen and (min-width: 500px)
+{
+    .nueve {
+        background: rgba(22,22,22,0.2);
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .Objetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .Objetos{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+<div class="caja">
+    <div></div>
+    <div><img src="Imagenes/escuela.jpg" alt="escudo de la escuela"></div>
+    <div></div>
+</div>
+
+<button onclick="veranuncio()">Ver anuncio</button>
+<div class="anuncio" id="publicidad">
+    Esto es un mensaje sin entrar solo capar todos tus datos
+</div>
+<div class="Objetos">
+    <div class="uno"><h4>Rasselín Wissangel Rousher</h4>Ingeniera Bioinformática</div>
+    <div class="dos"><h4>Verdulíz Saínz</h4>Ingeniera agrícola</div>
+    <div class="tres"><h4>Emiliam Bastreriz</h4>Compositora musical</div>
+    <div class="cuatro"><h4>Vitrea Horíz</h4>Bailarina</div>
+    <div class="cinco"><h4>Veddina Henion</h4>Modista</div>
+    <div class="seis"><h4>Samira Savadez</h4>Psicóloga</div>
+    <div class="siete"><h4>Shail Matsiz</h4>Abogada</div>
+    <div class="ocho"><h4>Christal Gedishen</h4>Arquitecta técnica</div>
+    <div class="nueve"><h4>Gill Anherson</h4>Medica</div>
+</div>
+
+</body>
+</html>
